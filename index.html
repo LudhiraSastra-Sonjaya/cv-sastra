@@ -1,83 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="profile.css">
-    <title>Belajar HTML</title>
+    <title>Portfolio - Ludhira Sastra</title>
 </head>
+
 <body>
-    <nav>
+    <nav id="navbar">
         <div class="navbar">
             <div class="logo">
                 <h1>Sur<i>awung.</i></h1>
             </div>
-            <div class="nav-menu">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-menu" id="navMenu">
                 <ul class="nav-menu-detail">
-                    <li href="#">Home</li>
-                    <li href="#">About</li>
-                    <li href="#">Portfolio</li>
-                    <li href="#">Contact</li>
+                    <li><a href="#tentang-saya" class="nav-link">Tentang Saya</a></li>
+                    <li><a href="#keahlian" class="nav-link">Keahlian</a></li>
+                    <li><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="main-section">
-        <div class="main-section-pertama">
-            <img src="/foto/WhatsApp Image 2025-10-02 at 08.37.17_111afcf0.jpg" alt="foto sastra" class="foto-main" width="400px" height="auto">
-            <div class="isian-main-section">
-                <div class="main-section-text">
-                    <h1>HOLLAA! INI SASTRA</h1>
-                    <div class="biodata-item">
-                        <span class="label">Nama</span>
-                        <span class="separator">:</span>
-                        <span class="value">Ludhira Wira Darma Sastra Sonjaya</span>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-text">YOO! SAYA ADALAH <br>LUDHIRA WIRA DARMA SASTRA SONJAYA </h1>
+            <p class="hero-subtitle">SEORANG DESAINER GRAFIS DAN DEVELOPER PEMULA<br>YANG BERASAL DARI BANDUNG</p>
+        </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="tentang-saya" class="section-container">
+        <h2 class="section-title">TENTANG SAYA</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="./foto/WhatsApp Image 2025-10-02 at 08.37.17_111afcf0.jpg" alt="Ludhira Sastra"
+                    class="profile-photo">
+            </div>
+            <div class="about-text">
+                <p class="about-description">
+                    Halo! Saya Ludhira Wira Darma Sastra Sonjaya, seorang mahasiswa Informatika di Institut Teknologi
+                    Nasional Bandung. Saya memiliki passion yang kuat dalam bidang desain dan pengembangan web.
+                </p>
+                <p class="about-description">
+                    Dengan pengalaman di UI/UX design dan front-end development, saya senang menciptakan pengalaman
+                    digital yang menarik dan fungsional. Saya percaya bahwa desain yang baik adalah perpaduan antara
+                    estetika dan fungsionalitas.
+                </p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label">NAMA LENGKAP</span>
+                        <span class="info-value">Ludhira Wira Darma Sastra Sonjaya</span>
                     </div>
-                    <div class="biodata-item">
-                        <span class="label">NRP</span>
-                        <span class="separator">:</span>
-                        <span class="value">15-2024-011</span>
+                    <div class="info-item">
+                        <span class="info-label">NRP</span>
+                        <span class="info-value">15-2024-011</span>
                     </div>
-                    <div class="biodata-item">
-                        <span class="label">Alamat</span>
-                        <span class="separator">:</span>
-                        <span class="value">Jl.Kopo Bihbul, Bandung, Jawa Barat</span>
-                    </div>
-                    <div class="biodata-item">
-                        <span class="label">Pendidikan</span>
-                        <span class="separator">:</span>
-                        <span class="value">- SMPN 2 Margahayu <br>- SMK Telkom Bandung <br>- Institut Teknologi Nasional</span>
-                    </div>
-                    <div class="biodata-item">
-                        <span class="label">Keahlian</span>
-                        <span class="separator">:</span>
-                        <span class="value">- Desainer Grafis <br>- UI/UX <br>- Front End</span>
-                    </div>
-                </div>
-                <div class="main-section-text">
-                    <h1>Kontak</h1>
-                    <div class="biodata-item">
-                        <span class="label"><i class="fa-solid fa-envelope"></i></span>
-                        <span class="separator"></span>
-                        <span class="value">sastrasonjaya@gmail.com</span>
-                    </div>
-                    <div class="biodata-item">
-                        <span class="label"><i class="fa-solid fa-phone"></i></span>
-                        <span class="separator"></span>
-                        <span class="value">+62 897 7717 892</span>
-                    </div>
-                    <div class="biodata-item">
-                        <span class="label"><i class="fa-solid fa-globe"></i></span>
-                        <span class="separator"></span>
-                        <span class="value">Sedang di bangun</span>
+                    <div class="info-item">
+                        <span class="info-label">LOKASI</span>
+                        <span class="info-value">Bandung, Jawa Barat</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Keahlian Section -->
+    <section id="keahlian" class="section-container">
+        <h2 class="section-title">KEAHLIAN</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-paintbrush"></i>
+                </div>
+                <h3 class="skill-name">Desainer Grafis</h3>
+                <p class="skill-description">
+                    Menciptakan desain visual yang menarik dan komunikatif dengan menggunakan berbagai tools seperti
+                    Adobe Photoshop, Illustrator, dan Figma.
+                </p>
+                <div class="skill-tools">
+                    <span class="tool-tag">Photoshop</span>
+                    <span class="tool-tag">Illustrator</span>
+                    <span class="tool-tag">Figma</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <h3 class="skill-name">UI/UX Design</h3>
+                <p class="skill-description">
+                    Merancang antarmuka pengguna yang intuitif dan pengalaman pengguna yang optimal melalui riset,
+                    wireframing, dan prototyping.
+                </p>
+                <div class="skill-tools">
+                    <span class="tool-tag">Figma</span>
+                    <span class="tool-tag">Adobe XD</span>
+                    <span class="tool-tag">Wireframing</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="skill-name">Front-End Development</h3>
+                <p class="skill-description">
+                    Mengembangkan website responsif dan interaktif menggunakan HTML, CSS, JavaScript, dan framework
+                    modern seperti React.
+                </p>
+                <div class="skill-tools">
+                    <span class="tool-tag">HTML/CSS</span>
+                    <span class="tool-tag">JavaScript</span>
+                    <span class="tool-tag">React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan Section -->
+    <section id="pendidikan" class="section-container">
+        <h2 class="section-title">PENDIDIKAN</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2015 - 2018</div>
+                    <h3 class="timeline-title">SMPN 2 Margahayu</h3>
+                    <p class="timeline-description">
+                        Pendidikan Sekolah Menengah Pertama di SMPN 2 Margahayu, Bandung. Mulai mengembangkan minat
+                        dalam bidang teknologi dan desain.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2018 - 2021</div>
+                    <h3 class="timeline-title">SMK Telkom Bandung</h3>
+                    <p class="timeline-description">
+                        Mengambil jurusan Multimedia di SMK Telkom Bandung. Mempelajari dasar-dasar desain grafis, video
+                        editing, dan pengembangan web.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot active"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2024 - Sekarang</div>
+                    <h3 class="timeline-title">Institut Teknologi Nasional</h3>
+                    <p class="timeline-description">
+                        Saat ini menempuh pendidikan S1 Informatika di Institut Teknologi Nasional Bandung. Fokus
+                        memperdalam pengetahuan dalam pengembangan software dan UI/UX design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="section-container">
+        <h2 class="section-title">KONTAK</h2>
+        <div class="contact-content">
+            <p class="contact-intro">
+                Tertarik untuk berkolaborasi atau ingin berdiskusi tentang project?
+                Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.
+            </p>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4 class="contact-label">Email</h4>
+                        <a href="mailto:sastrasonjaya@gmail.com" class="contact-link">sastrasonjaya@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4 class="contact-label">Telepon</h4>
+                        <a href="tel:+6289777178920" class="contact-link">+62 897 7717 892</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4 class="contact-label">Instagram</h4>
+                        <a href="https://www.instagram.com/lud.sastra/" class="contact-link">@lud.sastra</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h4 class="contact-label">GitHub</h4>
+                        <a href="https://github.com/LudhiraSastra-Sonjaya"
+                            class="contact-link">github.com/LudhiraSastra-Sonjaya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Ludhira Sastra. All rights reserved.</p>
+    </footer>
+
     <script src="https://kit.fontawesome.com/8786bcd90a.js" crossorigin="anonymous"></script>
     <script src="profile.js"></script>
 </body>
+
 </html>
